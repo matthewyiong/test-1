@@ -1,12 +1,5 @@
 <?php
 
-
-
-
-
-
-
-
 $file='userdata.json';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -15,6 +8,7 @@ $loginPassword=$_POST['loginpassword'];
 $users = json_decode(file_get_contents($file),true);
 foreach($users as $user){
     if($user['registerName']==$loginName && $user['registerPassword']==$loginPassword){
+        echo "<script>loginStatus(1)</script>";
         header("Location: home.html");
         exit();
     }else{

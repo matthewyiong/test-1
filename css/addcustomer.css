@@ -1,0 +1,82 @@
+/* 根据 HTML 结构添加样式 */
+
+/* 整体布局 */
+.page4{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.formaddcustomer {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* 输入框和标签 */
+label {
+    margin-bottom: 5px;
+}
+
+.page4 input[type="text"],
+.page4 input[type="date"] ,.page4 textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* 提交按钮 */
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* 字段集合 */
+fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 垂直间距 */
+.invoid > * {
+    margin-bottom: 10px;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

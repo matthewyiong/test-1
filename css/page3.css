@@ -1,0 +1,32 @@
+.Page3{
+    margin: 0;
+    display: block;
+    height: fit-content;
+    
+}
+.searchEvent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.eventCard-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.eventCard{
+    
+}
+.searchEvent-container{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
+}

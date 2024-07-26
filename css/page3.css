@@ -14,19 +14,69 @@
     border-radius: 10px;
 }
 
-.eventCard-Container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.eventCard{
-    
-}
 .searchEvent-container{
     position: relative;
     width: 100%;
     height: 150px;
     background-color: rgba(0,0,0,0.1);
     border-radius: 20px;
+}
+.store-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.eventCard {
+    width: 275px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.eventCard:hover {
+    transform: scale(1.05);
+}
+
+.eventCardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.eventCardInfo {
+    padding: 15px;
+}
+
+.eventCardInfo h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 19px;
+}
+
+.eventCardInfo p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.eventCardInfo a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .eventCard {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .eventCard {
+        width: calc(100% - 40px);
+    }
 }

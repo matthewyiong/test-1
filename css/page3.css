@@ -21,7 +21,7 @@
     background-color: rgba(0,0,0,0.1);
     border-radius: 20px;
 }
-.store-container {
+.eventCard-Container {
     font-family: Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;

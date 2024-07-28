@@ -9,13 +9,66 @@
     <body>
         <div class="eventImg"></div>
         <div class="contentBlock">
-        <h3 class="eventType">Special Event</h4>
+        <h3 class="eventType">Special Event</h3>
         <h1 class="title">AERIAL FLOW YOGA</h1>
         <p class="content">Php....</p>
         <span class="line"></span>
+        <h4 class="eventInformation">Venue      :</h4>
+        <h4 class="eventInformation">Date       :</h4>
+        <h4 class="eventInformation">Time       :</h4>
+        <h4 class="eventInformation">Fee        :</h4>
+        <h4 class="eventInformation">Event host :</h4>
+        <h4 class="eventInformation">Precautions:</h4>
+
+        <span class="line"></span>
         <h3 class="thingToBring">Thing to bring</h3>
-        
+        <div class="think-Container">
+        <div class="thingIcon"><img src="../Img/Screenshot 2024-07-28 124450.png"><p class="thingContent">Water</p></div>
+        <div class="thingIcon"><img src="../Img/Screenshot 2024-07-28 124450.png"><p class="thingContent">Water</p></div>
+        <div class="thingIcon"><img src="../Img/Screenshot 2024-07-28 124450.png"><p class="thingContent">Water</p></div>
+        <div class="thingIcon"><img src="../Img/Screenshot 2024-07-28 124450.png"><p class="thingContent">Water</p></div>
         </div>
+        <button class="signUp">Sign Up Now!</button>
+        </div>
+        <div class="moreEvent">
+            <h1 class="moreEventTitle">For Other Event </h1>
+            <div class="moreImgContainer">
+                <img src="../Img/201010261156596577807.jpg" alt="" class="moreEventImg">
+                <img src="../Img/2010102611565864377801.jpg" alt="" class="moreEventImg">
+                <img src="../Img/2010102611565872177802.jpg" alt="" class="moreEventImg">
+                <img src="../Img/2010102611565872177802.jpg" alt="" class="moreEventImg">
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+    const container = document.querySelector('.think-Container');
+    const thingIcon = container.children;
+    let currentRowTop = thingIcon[0].offsetTop;
+    let rowthingIcon = [];
+    let maxWidth;
+
+    Array.from(thingIcon).forEach((thingIcon, index) => {
+        if (thingIcon.offsetTop !== currentRowTop) {
+            maxWidth = 100 / rowthingIcon.length + '%';
+            rowthingIcon.forEach(rowthingIcon => rowthingIcon.style.maxWidth = maxWidth);
+            rowthingIcon = [];
+            currentRowTop = thingIcon.offsetTop;
+        }
+        rowthingIcon.push(thingIcon);
+
+        // Handle last row
+        if (index === thingIcon.length - 1) {
+            maxWidth = 100 / rowthingIcon.length + '%';
+            rowthingIcon.forEach(rowthingIcon => rowthingIcon.style.maxWidth = maxWidth);
+        }
+    });
+});
+
+let index=0;
+function refresh(){
+    let
+}
+        </script>
 </body>
 
 </html>

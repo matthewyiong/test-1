@@ -137,7 +137,7 @@
                     Wilayah Persekutuan Kuala Lumpur,
                     Malaysia.</p><br>
                 <a href="tel:+1300-123-998">1300-123-998</a><br>
-                <a href="branch page1.html">View More</a>
+                [<a href="branch1.php">View More</a>]
             </div>
         </div>
         <div class="eventCard">
@@ -149,7 +149,7 @@
                     Wilayah Persekutuan Kuala Lumpur,
                     Malaysia.</p><br>
                 <a href="tel:+1300-123-998">1300-123-998</a><br>
-                <a href="branch page1.html">View More</a>
+                [<a href="branch1.php">View More</a>]
             </div>
         </div>
         <div class="eventCard">
@@ -161,7 +161,7 @@
                     Wilayah Persekutuan Kuala Lumpur,
                     Malaysia.</p><br>
                 <a href="tel:+1300-123-998">1300-123-998</a><br>
-                <a href="branch page1.html">View More</a>
+                [<a href="branch1.php">View More</a>]
             </div>
         </div>
         <div class="eventCard">
@@ -173,7 +173,7 @@
                     Wilayah Persekutuan Kuala Lumpur,
                     Malaysia.</p><br>
                 <a href="tel:+1300-123-998">1300-123-998</a><br>
-                <a href="branch page1.html">View More</a>
+                [<a href="branch1.php">View More</a>]
             </div>
         </div>
         <div class="eventCard">
@@ -185,7 +185,7 @@
                     Wilayah Persekutuan Kuala Lumpur,
                     Malaysia.</p><br>
                 <a href="tel:+1300-123-998">1300-123-998</a><br>
-                <a href="branch page1.html">View More</a>
+                [<a href="branch1.php">View More</a>]
             </div>
         </div>
         <div class="eventCard">
@@ -197,7 +197,7 @@
                     Wilayah Persekutuan Kuala Lumpur,
                     Malaysia.</p><br>
                 <a href="tel:+1300-123-998">1300-123-998</a><br>
-                <a href="branch page1.html">View More</a>
+                [<a href="branch1.php">View More</a>]
             </div>
         </div>
 

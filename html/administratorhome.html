@@ -1,54 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/page.css">
 
-    </head>
-    <body>
-        <aside>
-            <div class="navigation">
-                <div class="menuToggle"></div>
-                <ul>
-                    <li class="list active" style="--clr:red;">
-                        <a onclick="switchPage('Page1')">
-                            <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-06-08 131631.png">
-                            </span>
-                            <span class="text">Home</span>
-                        </a>
-                    </li>
-                    <li class="list" style="--clr:black;">
-                        <a onclick="switchPage('Page2')">
-                            <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-06-08 133129.png"></span>
-                            <span class="text">Login</span>
-                        </a>
-                    </li>
-                    <li class="list" style="--clr:green;">
-                        <a onclick="switchPage('Page3')">
-                            <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-06-08 133525.png"
-                                    alt=""></span>
-                            <span class="text">Search</span>
-                        </a>
-                    </li>
-                    <li class="list active" style="--clr:rgb(255, 153, 51);">
-                        <a onclick="switchPage('Page1')">
-                            <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-07-06 223611.png">
-                            </span>
-                            <span class="text">Modify</span>
-                        </a>
-                    </li>
-                    <li class="list" style="--clr:blue;">
-                        <a onclick="switchPage('Page4')">
-                            <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-06-08 133929.png"
-                                    alt=""></span>
-                            <span class="text">Add</span>
-                        </a>
-                    </li>
-                    
-                </ul>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/addEventPage.css">
+
+</head>
+
+<body>
+    <aside>
+        <div class="navigation">
+            <div class="menuToggle"></div>
+            <ul>
+                <li class="list active" style="--clr:red;">
+                    <a onclick="switchPage('Page1')">
+                        <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-06-08 131631.png">
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:black;">
+                    <a onclick="switchPage('Page2')">
+                        <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-06-08 133129.png"></span>
+                        <span class="text">Login</span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:green;">
+                    <a onclick="switchPage('Page3')">
+                        <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-06-08 133525.png"
+                                alt=""></span>
+                        <span class="text">Search</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:rgb(255, 153, 51);">
+                    <a onclick="switchPage('Page4')">
+                        <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-07-06 223611.png">
+                        </span>
+                        <span class="text">Modify</span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:blue;">
+                    <a onclick="switchPage('Page5')">
+                        <span class="icon"><img class="imgIcon" src="../Img/Screenshot 2024-06-08 133929.png"
+                                alt=""></span>
+                        <span class="text">Add</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </aside>
+
+    <div class="Page Page1 "></div>
+    <div class="Page Page2 "></div>
+    <div class="Page Page3 "></div>
+    <div class="Page Page4 "></div>
+    <div class="Page Page5 ">
+        <form action="../php/addEventPage.php">
+
+            <div class="eventImg"></div>
+            <div class="contentBlock">
+                <h3 class="eventType">Special Event</h3>
+                <input class="title eventInformation" name="title" placeholder="Title:">
+                <textarea class="content eventInformation" name="content" rows="4" cols="50"></textarea>
+                <span class="line"></span>
+                <table class="inputTable">
+                    <tr>
+                        <td id="qqq"><label class="eventInformation" for="Venue">Venue :</label></td>
+                        <td><input name="Venue"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="eventInformation" for="Date">Date :</label></td>
+                        <td><input name="Date" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="eventInformation" for="Time">Time :</label></td>
+                        <td><input name="Time" type="time"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="eventInformation" for="Fee">Fee :</label></td>
+                        <td><input name="Fee" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="eventInformation" for="Host">Event host :</label></td>
+                        <td><input name="Host"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="eventInformation">Precautions:</label></td>
+                        <td><textarea class="" name="Precautions" cols="30" rows="3"></textarea></td>
+                    </tr>
+                </table>
+                <span class="line"></span>
+                <h3 class="thingToBring">Thing to bring</h3>
+                <div class="think-Container">
+                    <div class="thingIcon"><img src="../Img/Screenshot 2024-07-28 124450.png">
+                        <p class="thingContent">Water</p>
+                    </div>
+                    <div class="thingIcon"><img src="../Img/Screenshot 2024-07-28 124450.png">
+                        <p class="thingContent">Water</p>
+                    </div>
+                    <div class="thingIcon"><img src="../Img/Screenshot 2024-07-28 124450.png">
+                        <p class="thingContent">Water</p>
+                    </div>
+                    <div class="thingIcon"><img src="../Img/Screenshot 2024-07-28 124450.png">
+                        <p class="thingContent">Water</p>
+                    </div>
+                </div>
+                <button class="signUp">Sign Up Now!</button>
             </div>
-        </aside>
-    </body>
-    <script src="../js/page.js"></script>
+
+
+
+    </div>
+    </div>
+
+</body>
+<script src="../js/page.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector('.think-Container');
+        const thingIcons = container.children;
+        let currentRowTop = thingIcons[0].offsetTop;
+        let rowThingIcons = [];
+        let maxWidth;
+
+        Array.from(thingIcons).forEach((thingIcon, index) => {
+            if (thingIcon.offsetTop !== currentRowTop) {
+                maxWidth = (100 / rowThingIcons.length) + '%';
+                rowThingIcons.forEach(rowThingIcon => rowThingIcon.style.maxWidth = maxWidth);
+                rowThingIcons = [];
+                currentRowTop = thingIcon.offsetTop;
+            }
+            rowThingIcons.push(thingIcon);
+
+            // Handle last row
+            if (index === thingIcons.length - 1) {
+                maxWidth = (100 / rowThingIcons.length) + '%';
+                rowThingIcons.forEach(rowThingIcon => rowThingIcon.style.maxWidth = maxWidth);
+            }
+        });
+    });
+
+    let index = 0;
+    let width = 0;
+    let result = 0;
+    const moreEventImg = document.querySelectorAll('.moreEventImg');
+
+    function leftImg() {
+        index--;
+        if (index < 0) {
+            index = moreEventImg.length - 1;
+        }
+        refresh();
+    }
+    function rightImg() {
+        index++;
+        if (index > moreEventImg.length - 1) {
+            index = 0;
+        }
+        refresh();
+    }
+    function refresh() {
+        const ImgContainer = document.querySelector('.ImgContainer');
+        width = ImgContainer.clientWidth;
+        result = (index * width) + "px";
+        ImgContainer.style.right = result;
+    }
+</script>
+
 </html>

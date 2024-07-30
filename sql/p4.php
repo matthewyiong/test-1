@@ -28,8 +28,11 @@
             }
                 echo "<tr><td colspan=4>$result->num_rows records</td></tr> ";
                 $conn->close();
+                
             ?>
+
 </table>
+
 </body>
 
 </html>
